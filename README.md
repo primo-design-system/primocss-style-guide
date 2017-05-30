@@ -1,4 +1,4 @@
-#PrimoCSS style guide
+# PrimoCSS style guide
 
 *A living style guide as a kick off point and resource to help define the visual language for different web components.*
 
