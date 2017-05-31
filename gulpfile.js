@@ -6,7 +6,7 @@ cssnano = require('gulp-cssnano'),
 sassLint = require('gulp-sass-lint'),
 rename = require('gulp-rename'),
 sourcemaps = require('gulp-sourcemaps'),
-sassPath = 'node_modules/primocss/scss/primocss.scss';
+sassPath = 'public/assets/scss/build.scss';
 
 // Gulp help instructions triggered as Gulp default task
 gulp.task('help', function() {
@@ -30,7 +30,7 @@ function throwSassError(sassError) {
 
 // Lints Sass and provides errors
 gulp.task('lint:sass', function() {
-  return gulp.src('node_modules/primocss/scss/**/*.s+(a|c)ss')
+  return gulp.src('public/assets/scss/**/*.s+(a|c)ss')
     .pipe(sassLint({
       options: {
           configFile: '.sass-lint.yml'
